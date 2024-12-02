@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <!-- <div class="container py-5">
+        <form>
+
+            <div class="mb-3">
+                <label for="productName">Product Name</label>
+                <input type="text" class="form-control" name="" id="productName">
+            </div>
+            <div class="mb-3">
+                <label for="productPrice">Product Price</label>
+                <input type="number" class="form-control" name="" id="productPrice">
+            </div>
+            <div class="mb-3">
+                <label for="productImage">Product Image</label>
+                <input type="file"  class="form-control" name="" id="productImage">
+            </div>
+            <div class="mb-3">
+                <label for="productCategory">Product Category</label>
+                <select class="form-select" id="productCategory">
+                    <option value="tv">Tv</option>
+                    <option  value="mobile">Mobile</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="laptop">Laptop</option>
+                </select>
+            </div>
+
+            <div class="form-check form-switch mb-3">
+                <input  class="form-check-input" type="checkbox" role="switch" id="productSale">
+                <label class="form-check-label" for="productSale">product Sale</label>
+            </div>
+            <div class="mb-3">
+                <label for="productDescription">Product Description</label>
+                <textarea name="" id="productDescription" class="form-control"></textarea>
+            </div>
+
+            <button onclick="addProduct()"    type="button" class="btn btn-outline-info">Add Product</button>
+            <button type="button" class="btn btn-outline-danger">Clear Form</button>
+        </form>
+        <input type="text" placeholder="Search................... " class="form-control mx-auto my-3 w-50" name=""
+            id="">
+
+
+        <div class="row g-3" id="myRow">
+        
+            
+        </div>
+    </div> -->
+    <div class="container py-5">
+        <div class=" py-2 d-flex align-items-center flex-column justify-content-center">
+            <h1 class="position-relative mb-5">Bookmarker</h1>
+            <div class="borderbody w-100 d-flex flex-column align-items-center py-4 mt-3">
+                <h2>
+                    <i class="fa-solid fa-bookmark" style="color: #40A55B;"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark f-gr" style="color: #B4AC49;"></i>
+                </h2>
+                <div class=" w-100 ">
+                    <i class="fa-solid fa-book-bookmark "></i>
+                    <label  for="bookmarkName" class="form-label">Site Name</label>
+                    <input class="form-control py-0" list="datalistOptions" id="sitename"
+                        placeholder="Bookmarker Name">
+
+                </div>
+                <div class=" w-100 py-2 ">
+                    <i class="fa-solid fa-link  py-3"></i>
+                    <label for="SiteURL" class="form-label">Site URL</label>
+                    <input class="form-control py-0" list="datalistOptions" id="siteurl"
+                        placeholder="Website URL">
+
+                </div>
+                <button onclick="submit()"   id="submitBtn" type="button" class="btn btn-sumbit px-5">Submit</button>
+            </div>
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+
+                    </tr>
+
+                </thead>
+                <tbody id="Contentsite"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
